@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<title>Template</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="main.js" defer></script>
+	</head>
+	<body>
+		<main id="main-container">
+			<h1>WebRTC Voice & Video Chat</h1>
+			<button onclick="start()">Start Chat</button>
+
+			<h3>Your Camera</h3>
+			<video id="localVideo" autoplay muted playsinline></video>
+
+			<h3>Friend's Camera</h3>
+			<video id="remoteVideo" autoplay playsinline></video>
+
+			<h3>Your Mic</h3>
+			<canvas id="micMeter" width="300" height="50"></canvas>
+
+			<h3>Friend's Voice</h3>
+			<canvas id="speakerMeter" width="300" height="50"></canvas>
+		</main>
+	</body>
+</html>
